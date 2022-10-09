@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+
+</head>
+    
+<body>
+        <!-- Chat Bar Block -->
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible"> Chat with us! 
+            </button>
+
+            <div class="content">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            </div>
+
+                            <!-- User Input Box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input type="text" id="textInput" class="input-box" name="msg" list="questions"
+                                    placeholder="Tap 'Enter' To Send A Message">
+                                   <datalist id="questions">
+
+<option>what is the address of the college</option>
+<option>what are the courses offered in physical science</option>   
+<option>what are the courses offered in life science</option>
+<option>what are the courses offered in commerce</option>
+<option>what are the courses offered in arts</option>
+<option>what are the courses offered in management</option>
+<option>does the college have clubs</option>
+<option>is the college affiliated</option>
+<option>how big is the college</option>
+<option>does the college provide scholarships</option>
+<option>does the college offer PG and Ph.D</option>
+<option>what is the grade given by NAAC</option>
+<option>does the college have a placement cell</option>
+<option>thank you</option>
+                                </datalist>
+                                    <p></p>
+                                </div>
+
+                            </div>
+
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+
+        </div>
+    
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/chat.js"></script>
+<script src="static/scripts/responses.js"></script>
+
+</html>
